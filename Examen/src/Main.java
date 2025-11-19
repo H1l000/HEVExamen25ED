@@ -13,5 +13,26 @@ public class Main {
             System.out.println("Numero 2:" + numero2);
             sc.close();
         }
+
+        public static double restar (double a, double b){
+            return a - b;
+        }
+
+        public static double dividir (double a, double b) {
+            if (b != 0) {
+                return a/b;
+            }else{
+                throw new IllegalArgumentException("No se puede dividir por cero");
+            }
+
+        }
+        public static double raizCuadrada(double a){
+            if (a>=0){
+                return Math.sqrt(a);
+            }else{
+                throw new IllegalArgumentException("No se puede calcular la raiz cuadrada de " +
+                        "un numero negativo");
+            }
+        }
     }
 }
